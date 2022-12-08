@@ -1,41 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ToDoApp.MainPage">
+             x:Class="ToDoApp.MainPage"
+             BackgroundColor="#F4F7F7">
+    <Grid VerticalOptions="StartAndExpand"
+          HorizontalOptions="Center"
+          >
+       
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="460"  />
+            <ColumnDefinition Width="460" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Grid.RowSpan="2"
+               Grid.Column="0"
+               Text="Welcome, TestUser!"
+               TextColor="#1B1B1B"
+               HeightRequest="400"
+               >
+        </Label>
+        <Border Grid.Row="1"
+                Grid.Column="0"
+                BackgroundColor="#707070"
+                StrokeThickness="1"
+                HorizontalOptions="Center">
+            <Button Text="FestivalBeispiel1"
+                    TextColor="#1B1B1B"
+                    BackgroundColor="#DCDEDE">
+            </Button>
+        </Border>
+        <Border Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="#707070"
+                StrokeThickness="1">
+            <Button Text="FestivalBeispiel2"
+                    TextColor="#1B1B1B"
+                    BackgroundColor="#DCDEDE">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+            </Button>
+        </Border>
+        <Border Grid.Row="2"
+                Grid.Column="0"
+                BackgroundColor="#707070"
+                StrokeThickness="1">
+            <Button Text="FestivalBeispiel3"
+                    TextColor="#1B1B1B"
+                    BackgroundColor="#DCDEDE">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            </Button>
+        </Border>
+        <Border Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="#707070"
+                StrokeThickness="1">
+            <Button Text="FestivalBeispiel4"
+                    TextColor="#1B1B1B"
+                    BackgroundColor="#DCDEDE">
+            </Button>
+        </Border>
+    </Grid>
 
-            <Label
-                Text="Hello, TEST!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
 
 </ContentPage>
