@@ -3,38 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoApp.MainPage"
              BackgroundColor="#F4F7F7">
-    <Grid VerticalOptions="StartAndExpand"
-          HorizontalOptions="Center"
-          >
+    <Grid HorizontalOptions="Fill">
        
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="460"  />
-            <ColumnDefinition Width="460" />
+            <ColumnDefinition Width="2*"  />
+            <ColumnDefinition Width="4*"  />
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="*"  />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="7*" />
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Label Grid.RowSpan="2"
+        <Label Grid.Row="0"
                Grid.Column="0"
                Text="Welcome, TestUser!"
                TextColor="#1B1B1B"
-               HeightRequest="400"
+               FontSize="Title"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
                >
         </Label>
         <Border Grid.Row="1"
-                Grid.Column="0"
+                Grid.Column="1"
                 BackgroundColor="#707070"
-                StrokeThickness="1"
-                HorizontalOptions="Center">
+                StrokeThickness="1">
             <Button Text="FestivalBeispiel1"
                     TextColor="#1B1B1B"
                     BackgroundColor="#DCDEDE">
             </Button>
         </Border>
         <Border Grid.Row="1"
-                Grid.Column="1"
+                Grid.Column="2"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
             <Button Text="FestivalBeispiel2"
@@ -44,7 +48,7 @@
             </Button>
         </Border>
         <Border Grid.Row="2"
-                Grid.Column="0"
+                Grid.Column="1"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
             <Button Text="FestivalBeispiel3"
@@ -54,10 +58,46 @@
             </Button>
         </Border>
         <Border Grid.Row="2"
-                Grid.Column="1"
+                Grid.Column="2"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
             <Button Text="FestivalBeispiel4"
+                    TextColor="#1B1B1B"
+                    BackgroundColor="#DCDEDE">
+            </Button>
+        </Border>
+        <Border Grid.Row="3"
+                Grid.Column="1"
+                BackgroundColor="#707070"
+                StrokeThickness="1">
+            <Button Text="FestivalBeispiel5"
+                    TextColor="#1B1B1B"
+                    BackgroundColor="#DCDEDE">
+            </Button>
+        </Border>
+        <Border Grid.Row="4"
+                Grid.Column="1"
+                BackgroundColor="#707070"
+                StrokeThickness="1">
+            <Button Text="FestivalBeispiel7"
+                    TextColor="#1B1B1B"
+                    BackgroundColor="#DCDEDE">
+            </Button>
+        </Border>
+        <Border Grid.Row="3"
+                Grid.Column="2"
+                BackgroundColor="#707070"
+                StrokeThickness="1">
+            <Button Text="FestivalBeispiel6"
+                    TextColor="#1B1B1B"
+                    BackgroundColor="#DCDEDE">
+            </Button>
+        </Border>
+        <Border Grid.Row="4"
+                Grid.Column="2"
+                BackgroundColor="#707070"
+                StrokeThickness="1">
+            <Button Text="FestivalBeispiel8"
                     TextColor="#1B1B1B"
                     BackgroundColor="#DCDEDE">
             </Button>
