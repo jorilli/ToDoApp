@@ -32,18 +32,20 @@
                 Grid.Column="1"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
-            <Button Text="FestivalBeispiel1"
+            <Button Text="FestivalBeispiel"
                     TextColor="#1B1B1B"
-                    BackgroundColor="#DCDEDE">
+                    BackgroundColor="#DCDEDE"
+                    Clicked="Button_Clicked">
             </Button>
         </Border>
         <Border Grid.Row="1"
                 Grid.Column="2"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
-            <Button Text="FestivalBeispiel2"
+            <Button Text="FestivalBeispiel"
                     TextColor="#1B1B1B"
-                    BackgroundColor="#DCDEDE">
+                    BackgroundColor="#DCDEDE"
+                    Clicked="Button_Clicked">
 
             </Button>
         </Border>
@@ -51,9 +53,10 @@
                 Grid.Column="1"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
-            <Button Text="FestivalBeispiel3"
+            <Button Text="FestivalBeispiel"
                     TextColor="#1B1B1B"
-                    BackgroundColor="#DCDEDE">
+                    BackgroundColor="#DCDEDE"
+                    Clicked="Button_Clicked">
 
             </Button>
         </Border>
@@ -61,45 +64,50 @@
                 Grid.Column="2"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
-            <Button Text="FestivalBeispiel4"
+            <Button Text="FestivalBeispiel"
                     TextColor="#1B1B1B"
-                    BackgroundColor="#DCDEDE">
+                    BackgroundColor="#DCDEDE"
+                    Clicked="Button_Clicked">
             </Button>
         </Border>
         <Border Grid.Row="3"
                 Grid.Column="1"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
-            <Button Text="FestivalBeispiel5"
+            <Button Text="FestivalBeispiel"
                     TextColor="#1B1B1B"
-                    BackgroundColor="#DCDEDE">
+                    BackgroundColor="#DCDEDE"
+                    Clicked="Button_Clicked">
             </Button>
         </Border>
         <Border Grid.Row="4"
                 Grid.Column="1"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
-            <Button Text="FestivalBeispiel7"
+            <Button Text="FestivalBeispiel"
                     TextColor="#1B1B1B"
-                    BackgroundColor="#DCDEDE">
+                    BackgroundColor="#DCDEDE"
+                    Clicked="Button_Clicked">
             </Button>
         </Border>
         <Border Grid.Row="3"
                 Grid.Column="2"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
-            <Button Text="FestivalBeispiel6"
+            <Button Text="FestivalBeispiel"
                     TextColor="#1B1B1B"
-                    BackgroundColor="#DCDEDE">
+                    BackgroundColor="#DCDEDE"
+                    Clicked="Button_Clicked">
             </Button>
         </Border>
         <Border Grid.Row="4"
                 Grid.Column="2"
                 BackgroundColor="#707070"
                 StrokeThickness="1">
-            <Button Text="FestivalBeispiel8"
+            <Button Text="FestivalBeispiel"
                     TextColor="#1B1B1B"
-                    BackgroundColor="#DCDEDE">
+                    BackgroundColor="#DCDEDE"
+                    Clicked="Button_Clicked">
             </Button>
         </Border>
     </Grid>
