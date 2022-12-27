@@ -10,7 +10,8 @@
         Title="Overview"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" >
-        <Image Source="https://www.google.com/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.4-s.png"></Image>
+        <Image BackgroundColor="White" Source="Menu.png" />
+
     </ShellContent>
 
 </Shell>
