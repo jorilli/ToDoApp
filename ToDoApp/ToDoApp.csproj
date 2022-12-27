@@ -51,6 +51,9 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\exit.png" />
 	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\logo_dunkel.png" />
+	  <None Remove="Resources\Images\logo_shift_happens.png" />
+	  <None Remove="Resources\Images\logo_shift_happens_kurz.png" />
 	  <None Remove="Resources\Images\Menu.png" />
 	  <None Remove="Resources\Images\profil.png" />
 	</ItemGroup>
@@ -61,6 +64,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Account.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Exit.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="FestivalEdditing.xaml">
