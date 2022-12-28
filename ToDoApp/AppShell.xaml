@@ -4,14 +4,14 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ToDoApp"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="True"
+    Shell.BackgroundColor="#dcdede">
 
     <ShellContent
-        Title="Overview"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" >
-        <Image BackgroundColor="White" Source="Menu.png" />
-
+        <Image Source="https://www.google.com/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.4-s.png"></Image>
     </ShellContent>
 
 </Shell>

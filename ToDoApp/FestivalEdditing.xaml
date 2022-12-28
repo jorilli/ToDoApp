@@ -3,24 +3,133 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoApp.FestivalEdditing"
              Title="FestivalBeispiel"
-             BackgroundColor="Black">
+             BackgroundColor="#F4F7F7">
+    
     <VerticalStackLayout>
-        <TimePicker Time="10:00"></TimePicker>
-        <DatePicker MinimumDate="01/01/2022"
-                    MaximumDate="12/31/2022"
-                    Date="12/07/2022" />
-        <!-- <Picker Title="Bitte wählen Sie eine Option"
-                SelectedIndexChanged="Picker_OnSelectedIndexChanged">
-            <Picker.Items>
-                <x:String>Option 1</x:String>
-                <x:String>Option 2</x:String>
-                <x:String>Option 3</x:String>
-                <x:String>Option 4</x:String>
-                <x:String>Option 5</x:String>
-                <x:String>Option 6</x:String>
-            </Picker.Items>
-        </Picker> -->
-        <Switch></Switch>
-        <CheckBox></CheckBox>
+        <Label HorizontalOptions="Center"
+               Text="FestivalBeispiel"
+               TextColor="#415562"
+               FontSize="Header"/>
+        <Grid HorizontalOptions="Fill">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="0">
+                <Label Text="Kategorie(n):"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Label Text="Open-Air"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       TranslationX="160"/>
+                <Label Text="Metalfestival"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       TranslationX="160"/>
+                <Label Text="Subtasks:"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Label Text="- Künstler 1 anfragen"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       TranslationX="60"/>
+                <Label Text="- Platz reservieren"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       TranslationX="60"/>
+                <Label Text="- Ticket-Design"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       TranslationX="60"/>
+                <Label Text="Fälligkeitsdatum:"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <DatePicker FontSize="Small"
+                    MinimumDate="01/01/2022"
+                    MaximumDate="12/31/2025"
+                    TextColor="#1b1b1b"
+                            TranslationY="-35"
+                            TranslationX="180"/>
+                <Label Text="Erinnerung:"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       TranslationY="-35"/>
+                <TimePicker Grid.Row="2"
+                    Grid.Column="1"
+                    Time="10:00"
+                    TextColor="#1b1b1b"
+                            TranslationY="-63"
+                            TranslationX="120"/>
+
+            </VerticalStackLayout>
+            <Line Grid.Column="3"
+                  Grid.RowSpan="2"
+                  X1="110" Y1="10"
+                  X2="110" Y2="480"
+                  Stroke="#dcdede"
+                  StrokeThickness="2" />
+            <VerticalStackLayout Grid.Column="3"
+                                 Grid.Row="0"
+                                 HorizontalOptions="Center">
+                <Label Text="test"
+                       TextColor="#1b1b1b"/>
+
+            </VerticalStackLayout>
+        </Grid>
     </VerticalStackLayout>
+        
+    
+ <!--   <Grid HorizontalOptions="Fill"
+          VerticalOptions="Start">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Grid.ColumnSpan="4"
+               Text="FestivalBeispiel"
+               FontSize="Header"
+               HorizontalOptions="Center"
+               TextColor="#1b1b1b">
+        </Label>
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="Kategorie(n)"
+               TextColor="#1b1b1b"/>
+        <TimePicker Grid.Row="2"
+                    Grid.Column="1"
+                    Time="10:00"
+                    TextColor="#1b1b1b"/>
+        <DatePicker Grid.Row="3"
+                    Grid.Column="1"
+                    MinimumDate="01/01/2022"
+                    MaximumDate="12/31/2022"
+                    Date="12/07/2022" 
+                    TextColor="#1b1b1b"/>
+    </Grid> -->
 </ContentPage>
