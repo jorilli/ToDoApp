@@ -5,13 +5,25 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ToDoApp"
     Shell.FlyoutBehavior="Disabled"
-    Shell.NavBarIsVisible="True"
-    Shell.BackgroundColor="#dcdede">
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarBackgroundColor="#dcdede"
+    Shell.TabBarForegroundColor="Black">
 
-    <ShellContent
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" >
-        <Image Source="https://www.google.com/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.4-s.png"></Image>
-    </ShellContent>
+    <TabBar>
+        <Tab Icon="home.png">
+
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        
+        <Tab Icon="profil.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Account}"/>
+        </Tab>
+        <Tab Icon="logo_dunkel.png">
+            <ShellContent ContentTemplate="{DataTemplate local:InfoPage}"/>
+        </Tab>
+        <Tab Icon="exit.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Exit}"/>
+        </Tab>
+    </TabBar>
 
 </Shell>

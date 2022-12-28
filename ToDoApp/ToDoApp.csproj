@@ -78,6 +78,9 @@
 	  <MauiXaml Update="HomeMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="InfoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Login.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
