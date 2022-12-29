@@ -18,7 +18,7 @@
         <Tab Icon="profil.png">
             <ShellContent ContentTemplate="{DataTemplate local:Account}"/>
         </Tab>
-        <Tab Icon="logo_dunkel.png">
+        <Tab Icon="logo.png">
             <ShellContent ContentTemplate="{DataTemplate local:InfoPage}"/>
         </Tab>
         <Tab Icon="exit.png">
