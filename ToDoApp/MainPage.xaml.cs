@@ -13,7 +13,7 @@ public partial class MainPage : ContentPage
     }
     private async void Menu_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new HomeMenu());
+        await Navigation.PushAsync(new OverviewFilter());
     }
 
 }
