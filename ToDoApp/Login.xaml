@@ -4,16 +4,15 @@
              x:Class="ToDoApp.Login"
              Title="Login"
              BackgroundColor="#f4f7f7">
-   
-        
-   <VerticalStackLayout>
+
+    <VerticalStackLayout>
         <Image Source="logo.png"
                MaximumHeightRequest="180"/>
         <Border MaximumWidthRequest="500"
                 Stroke="#a2d4f4"
                 StrokeThickness="2"
                 TranslationY="60">
-           <Entry TextColor="#1b1b1b"
+            <Entry TextColor="#1b1b1b"
                   Placeholder="Benutzername"
                   PlaceholderColor="#dcdede"
                   FontSize="Small"
@@ -23,14 +22,13 @@
                 Stroke="#a2d4f4"
                 StrokeThickness="2"
                 TranslationY="90">
-        <Entry IsPassword="True"
+            <Entry IsPassword="True"
                TextColor="#1b1b1b"
                FontSize="Small"
                VerticalTextAlignment="Center"
                PlaceholderColor="#dcdede"
                Placeholder="Password"/>
         </Border>
-
         <Button Text="Login"
                 BorderColor="#a2d4f4"
                 BackgroundColor="#a2d4f4"
@@ -40,9 +38,5 @@
                 TranslationX="170"
                 FontSize="Small"
                 Clicked="Login_Clicked"/>
-
     </VerticalStackLayout>
-    
-
-
 </ContentPage>
