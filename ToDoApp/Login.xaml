@@ -2,22 +2,47 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoApp.Login"
-             Title="Login">
-    <VerticalStackLayout
-        Spacing="25"
-        Padding="30">
-        <Label FontSize="20"
-            Text="Welcome ShiftHappens!"/>
-        <Border BackgroundColor="White" Padding="20"
-                Stroke="White" StrokeShape="RoundRectangle 10,10,10,10">
-            <VerticalStackLayout Spacing="15">
-                <Label Text="Benutzername" TextColor="#1b1b1b"/>
-                <Entry TextColor="#1b1b1b"/>
-                <Label Text="Passwort" TextColor="#1b1b1b"/>
-                <Entry IsPassword="True"
-                       TextColor="#1b1b1b"/>
-                <Button Text="Login"/>
-            </VerticalStackLayout>
+             Title="Login"
+             BackgroundColor="#f4f7f7">
+   
+        
+   <VerticalStackLayout>
+        <Image Source="logo.png"
+               MaximumHeightRequest="180"/>
+        <Border MaximumWidthRequest="500"
+                Stroke="#a2d4f4"
+                StrokeThickness="2"
+                TranslationY="60">
+           <Entry TextColor="#1b1b1b"
+                  Placeholder="Benutzername"
+                  PlaceholderColor="#dcdede"
+                  FontSize="Small"
+                  VerticalTextAlignment="Center"/>
         </Border>
+        <Border MaximumWidthRequest="500" 
+                Stroke="#a2d4f4"
+                StrokeThickness="2"
+                TranslationY="90">
+        <Entry IsPassword="True"
+               TextColor="#1b1b1b"
+               FontSize="Small"
+               VerticalTextAlignment="Center"
+               PlaceholderColor="#dcdede"
+               Placeholder="Password"/>
+        </Border>
+
+        <Button Text="Login"
+                BorderColor="#a2d4f4"
+                BackgroundColor="#a2d4f4"
+                TextColor="#1b1b1b"
+                WidthRequest="150"
+                TranslationY="150"
+                TranslationX="170"
+                FontSize="Small"
+                Clicked="Login_Clicked"/>
+
     </VerticalStackLayout>
+    
+
+
 </ContentPage>

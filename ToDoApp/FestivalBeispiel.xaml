@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoApp.FestivalBeispiel"
-             Title="FestivalBeispiel">
+             Title="FestivalBeispiel"
+             BackgroundColor="#f4f7f7">
     <VerticalStackLayout>
         <Label HorizontalOptions="Center"
                Text="FestivalBeispiel"
@@ -118,8 +119,10 @@
                        TranslationY="-250"/>
                 <Picker Title="wähle den Ort aus"
                         TitleColor="#1b1b1b"
-                        ItemsSource="{Binding Locations}">
-                </Picker>
+                        ItemsSource="{Binding locations}"
+                        BackgroundColor="Black"
+                        TranslationX="80"
+                        TranslationY="-335"/>
                 <Label Text="2'000"
                        TextColor="#1b1b1b"
                        FontSize="Medium"
@@ -127,18 +130,18 @@
                        TranslationY="-368"/>
                 <Slider x:Name="slider2"
                         Minimum="1"
-                        Maximum="2"
-                        TranslationX="80"
+                        Maximum="10"
+                        TranslationX="40"
                         TranslationY="-336"
                         MinimumTrackColor="#dcdede"
                         MaximumTrackColor="#a2d4f4"
-                        MaximumWidthRequest="180"
+                        MaximumWidthRequest="120"
                         />
                 <Label x:Name="textBlock1"
                        Text="Anzahl: {0}"
                        TextColor="#1b1b1b"
-                       TranslationY="-300"
-                       TranslationX="80"/>
+                       TranslationY="-365"
+                       TranslationX="270"/>
 
 
             </VerticalStackLayout>

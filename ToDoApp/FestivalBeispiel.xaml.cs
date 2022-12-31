@@ -21,8 +21,8 @@ public partial class FestivalBeispiel : ContentPage
 		return true;
 	}
 
-	private List<string> locations = new List<string>
-{
+	private List<string> locations = new()
+	{
 	"Chur",
 	"Bern",
 	"Zurich",
