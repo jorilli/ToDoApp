@@ -2,11 +2,29 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoApp.Exit"
-             Title="Exit">
+             BackgroundColor="#f4f7f7">
     <VerticalStackLayout>
+        <Image Source="logo.png"
+               HorizontalOptions="Center"
+               MaximumHeightRequest="150"
+               TranslationY="50"/>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="Du hast dich erfolgreich abgemeldet!"
+            TextColor="#1b1b1b"
+            HorizontalOptions="Center"
+            FontSize="Large"
+            TranslationY="140"/>
+        <Label 
+            Text="Hier geht's zum Login:"
+            TextColor="#1b1b1b"
+            HorizontalOptions="Center"
+            FontSize="Large"
+            TranslationY="140"
+            TranslationX="-110"/>
+        <ImageButton Source="home.png"
+                     Clicked="Login_Clicked"
+                     MaximumHeightRequest="20"
+                     TranslationY="100"
+                     TranslationX="80"/>
     </VerticalStackLayout>
 </ContentPage>

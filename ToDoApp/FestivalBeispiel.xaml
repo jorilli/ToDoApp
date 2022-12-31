@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ToDoApp.FestivalEdditing"
-             Title="FestivalBeispiel"
-             BackgroundColor="#F4F7F7">
-    
+             x:Class="ToDoApp.FestivalBeispiel"
+             Title="FestivalBeispiel">
     <VerticalStackLayout>
         <Label HorizontalOptions="Center"
                Text="FestivalBeispiel"
@@ -13,17 +11,18 @@
         <Grid HorizontalOptions="Fill">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="6*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="8*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <VerticalStackLayout Grid.Column="1"
-                                 Grid.Row="0">
+                                 Grid.Row="1">
                 <Label Text="Kategorie(n):"
                        TextColor="#1b1b1b"
                        FontSize="Medium"
@@ -77,59 +76,73 @@
                             TranslationX="120"/>
 
             </VerticalStackLayout>
-            <Line Grid.Column="3"
+            <Line Grid.Column="2"
                   Grid.RowSpan="2"
                   X1="110" Y1="10"
                   X2="110" Y2="480"
                   Stroke="#dcdede"
                   StrokeThickness="2" />
             <VerticalStackLayout Grid.Column="3"
-                                 Grid.Row="0"
+                                 Grid.Row="1"
                                  HorizontalOptions="Center">
-                <Label Text="test"
-                       TextColor="#1b1b1b"/>
+                <Label Text="Ort:"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Label Text="Grösse:"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Label Text="Altersbegrenzung:"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Label Text="Anzahl Tage:"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Label Text="Notizen:"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Label Text="Beispieltext für die Notizen bezüglich eines Festivals. Hier könnten spezielle Wünsche des Künstlers o.ä. stehen."
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"/>
+                <Switch OnColor="#a2d4f4"
+                        ThumbColor="#1b1b1b" 
+                        TranslationX="220"
+                        TranslationY="-220"/>
+                <Label Text="+18"
+                       TextColor="#1b1b1b"
+                       TranslationX="270"
+                       TranslationY="-250"/>
+                <Picker Title="wähle den Ort aus"
+                        TitleColor="#1b1b1b"
+                        ItemsSource="{Binding Locations}">
+                </Picker>
+                <Label Text="2'000"
+                       TextColor="#1b1b1b"
+                       FontSize="Medium"
+                       TranslationX="90"
+                       TranslationY="-368"/>
+                <Slider x:Name="slider2"
+                        Minimum="1"
+                        Maximum="2"
+                        TranslationX="80"
+                        TranslationY="-336"
+                        MinimumTrackColor="#dcdede"
+                        MaximumTrackColor="#a2d4f4"
+                        MaximumWidthRequest="180"
+                        />
+                <Label x:Name="textBlock1"
+                       Text="Anzahl: {0}"
+                       TextColor="#1b1b1b"
+                       TranslationY="-300"
+                       TranslationX="80"/>
+
 
             </VerticalStackLayout>
         </Grid>
     </VerticalStackLayout>
-        
-    
- <!--   <Grid HorizontalOptions="Fill"
-          VerticalOptions="Start">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Label Grid.Row="0"
-               Grid.ColumnSpan="4"
-               Text="FestivalBeispiel"
-               FontSize="Header"
-               HorizontalOptions="Center"
-               TextColor="#1b1b1b">
-        </Label>
-        <Label Grid.Row="1"
-               Grid.Column="1"
-               Text="Kategorie(n)"
-               TextColor="#1b1b1b"/>
-        <TimePicker Grid.Row="2"
-                    Grid.Column="1"
-                    Time="10:00"
-                    TextColor="#1b1b1b"/>
-        <DatePicker Grid.Row="3"
-                    Grid.Column="1"
-                    MinimumDate="01/01/2022"
-                    MaximumDate="12/31/2022"
-                    Date="12/07/2022" 
-                    TextColor="#1b1b1b"/>
-    </Grid> -->
 </ContentPage>
+

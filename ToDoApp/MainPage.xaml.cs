@@ -9,11 +9,11 @@ public partial class MainPage : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new FestivalEdditing());
+        await Navigation.PushAsync(new FestivalBeispiel());
     }
     private async void Menu_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new HomeMenu());
+        await Navigation.PushAsync(new OverviewFilter());
     }
 
 }

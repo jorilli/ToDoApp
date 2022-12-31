@@ -11,10 +11,11 @@
         <Border BackgroundColor="White" Padding="20"
                 Stroke="White" StrokeShape="RoundRectangle 10,10,10,10">
             <VerticalStackLayout Spacing="15">
-                <Label Text="Benutzername" TextColor="Black"/>
-                <Entry/>
-                <Label Text="Passwort" TextColor="Black"/>
-                <Entry IsPassword="True"/>
+                <Label Text="Benutzername" TextColor="#1b1b1b"/>
+                <Entry TextColor="#1b1b1b"/>
+                <Label Text="Passwort" TextColor="#1b1b1b"/>
+                <Entry IsPassword="True"
+                       TextColor="#1b1b1b"/>
                 <Button Text="Login"/>
             </VerticalStackLayout>
         </Border>

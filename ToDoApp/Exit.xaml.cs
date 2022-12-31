@@ -6,4 +6,8 @@ public partial class Exit : ContentPage
 	{
 		InitializeComponent();
 	}
+	private async void Login_Clicked(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new Login());
+	}
 }
