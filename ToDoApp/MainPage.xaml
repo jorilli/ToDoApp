@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoApp.MainPage"
              BackgroundColor="#F4F7F7">
-    <Grid HorizontalOptions="Fill"> 
+    <Grid HorizontalOptions="Fill">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"  />
             <ColumnDefinition Width="4*"  />
@@ -112,10 +112,6 @@
                Grid.Column="3"
                WidthRequest="90"
                HorizontalOptions="Start"
-               Source="Menu.png"
-               Clicked="Menu_Clicked"/>
-
+               Source="Menu.png"/>
     </Grid>
-
-
 </ContentPage>

@@ -11,10 +11,6 @@ public partial class MainPage : ContentPage
     {
         await Navigation.PushAsync(new FestivalBeispiel());
     }
-    private async void Menu_Clicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new OverviewFilter());
-    }
 
 }
 

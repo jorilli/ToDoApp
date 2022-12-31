@@ -93,57 +93,65 @@
                 <Label Text="Grösse:"
                        TextColor="#1b1b1b"
                        FontSize="Medium"
-                       FontAttributes="Bold"/>
+                       FontAttributes="Bold"
+                       TranslationY="10"/>
                 <Label Text="Altersbegrenzung:"
                        TextColor="#1b1b1b"
                        FontSize="Medium"
-                       FontAttributes="Bold"/>
+                       FontAttributes="Bold"
+                       TranslationY="10"/>
                 <Label Text="Anzahl Tage:"
                        TextColor="#1b1b1b"
                        FontSize="Medium"
-                       FontAttributes="Bold"/>
+                       FontAttributes="Bold"
+                       TranslationY="10"/>
                 <Label Text="Notizen:"
                        TextColor="#1b1b1b"
                        FontSize="Medium"
-                       FontAttributes="Bold"/>
+                       FontAttributes="Bold"
+                       TranslationY="10"/>
                 <Label Text="Beispieltext für die Notizen bezüglich eines Festivals. Hier könnten spezielle Wünsche des Künstlers o.ä. stehen."
                        TextColor="#1b1b1b"
-                       FontSize="Medium"/>
+                       FontSize="Medium"
+                       TranslationY="10"/>
                 <Switch OnColor="#a2d4f4"
                         ThumbColor="#1b1b1b" 
                         TranslationX="220"
-                        TranslationY="-220"/>
+                        TranslationY="-210"/>
                 <Label Text="+18"
                        TextColor="#1b1b1b"
                        TranslationX="270"
-                       TranslationY="-250"/>
-                <Picker Title="wähle den Ort aus"
-                        TitleColor="#1b1b1b"
-                        ItemsSource="{Binding locations}"
-                        BackgroundColor="Black"
+                       TranslationY="-240"/>
+                <Picker TextColor="#1b1b1b"
+                        BackgroundColor="#dcdede"
                         TranslationX="80"
-                        TranslationY="-335"/>
+                        TranslationY="-340">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Chur</x:String>
+                            <x:String>Zürich</x:String>
+                            <x:String>Olten</x:String>
+                            <x:String>Bern</x:String>
+                            <x:String>Tessin</x:String>
+                            <x:String>Wallis</x:String>
+                            <x:String>Solothurn</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Text="{Binding Source={x:Reference picker}}"/>
                 <Label Text="2'000"
                        TextColor="#1b1b1b"
                        FontSize="Medium"
                        TranslationX="90"
-                       TranslationY="-368"/>
+                       TranslationY="-358"/>
                 <Slider x:Name="slider2"
                         Minimum="1"
                         Maximum="10"
                         TranslationX="40"
-                        TranslationY="-336"
+                        TranslationY="-330"
                         MinimumTrackColor="#dcdede"
                         MaximumTrackColor="#a2d4f4"
-                        MaximumWidthRequest="120"
-                        />
-                <Label x:Name="textBlock1"
-                       Text="Anzahl: {0}"
-                       TextColor="#1b1b1b"
-                       TranslationY="-365"
-                       TranslationX="270"/>
-
-
+                        MaximumWidthRequest="120"/>
             </VerticalStackLayout>
         </Grid>
     </VerticalStackLayout>
