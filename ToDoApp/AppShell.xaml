@@ -11,14 +11,12 @@
 
     <TabBar>
         <Tab Icon="home.png">
-
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
         </Tab>
-        
         <Tab Icon="profil.png">
             <ShellContent ContentTemplate="{DataTemplate local:Account}"/>
         </Tab>
-        <Tab Icon="logo.png">
+        <Tab Icon="logo_kurz.png">
             <ShellContent ContentTemplate="{DataTemplate local:InfoPage}"/>
         </Tab>
         <Tab Icon="exit.png">
