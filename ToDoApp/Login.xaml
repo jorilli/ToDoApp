@@ -38,5 +38,21 @@
                 TranslationX="170"
                 FontSize="Small"
                 Clicked="Login_Clicked"/>
+        <CheckBox Color="#a2d4f4"
+                  BackgroundColor="#dcdede"
+                  TranslationX="400"
+                  TranslationY="70"/>
+        <Button Text="FAQ-Bereich"
+               TextColor="#415562"
+                BackgroundColor="#f4f7f7"
+                BorderColor="#f4f7f7"
+                MaximumWidthRequest="120"
+                TranslationX="-150"
+                TranslationY="26"
+                Clicked="Faq_Clicked"/>
+        <Label Text=" wurde gelesen"
+               TextColor="#1b1b1b"
+               TranslationX="535"
+               TranslationY="-6"/>
     </VerticalStackLayout>
 </ContentPage>

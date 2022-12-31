@@ -10,4 +10,8 @@ public partial class Login : ContentPage
 	{
 		await Navigation.PushAsync(new MainPage());
 	}
+	private async void Faq_Clicked(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new FaqBereich());
+	}
 }

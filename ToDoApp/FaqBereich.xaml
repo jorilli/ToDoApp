@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDoApp.FaqBereich"
+             Title="FaqBereich"
+             BackgroundColor="#f4f7f7">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0"
+               Grid.ColumnSpan="4"
+            Text="FAQ-Bereich"
+               TextColor="#415562"
+               FontSize="Title"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               TranslationY="20"/>
+        <VerticalStackLayout Grid.Column="1"
+                            Grid.Row="1"
+                             VerticalOptions="Start"
+                             >
+            <Label Text="Meine Kontaktinformationen sind nicht mehr richtig. Wie kann ich sie ändern?"
+                       TextColor="#1b1b1b"
+                       FontAttributes="Bold"/>
+            <Label Text="Deine Personalinformationen werden direkt von der Datenbank geholt. 
+Bitte wende dich an den IT-Support durch das Kontaktformular auf der rechten Seite. Deine 
+Daten werden immer in der Nacht aktualisiert."
+                   TextColor="#1b1b1b"
+                   Padding="15"/>
+            <Label Text="Ich habe eine Idee für ein nächstes Feature. Wem und wie melde ich diese?"
+                       TextColor="#1b1b1b"
+                       FontAttributes="Bold"/>
+            <Label Text="Das freut uns sehr! Bitte schreibe deine Idee in das Kontaktformular auf der rechten Seite.
+Wir werden deine Idee schnellstmöglich einbauen."
+                   TextColor="#1b1b1b"
+                   Padding="15"/>
+            <Label Text="Ich bin mir nicht sicher, ob ich die neuste Version der App habe. Wo kann ich das
+überprüfen?"
+                       TextColor="#1b1b1b"
+                       FontAttributes="Bold"/>
+            <Label Text="Wenn du auf der Startseite in der Navigationsleiste auf das Logo klickst, kommst du auf die 
+Infoseite. Dort kannst du deine aktuelle Version mit der neusten abgleichen. Die neuste Version ist: 1.0"
+                   TextColor="#1b1b1b"
+                   Padding="15"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Column="3"
+                             Grid.Row="1">
+            <Label Text="Kontaktformular"
+                   TextColor="#1b1b1b"
+                   FontSize="Medium"
+                   VerticalOptions="Start"/>
+            <Border MinimumHeightRequest="30"
+                    MaximumWidthRequest="400"
+                    Stroke="#a2d4f4"
+                    StrokeThickness="2"
+                    TranslationY="20"
+                    TranslationX="-90">
+                <Entry x:Name="EmailEingabe"
+                    TextColor="#1b1b1b"   
+                  Placeholder="Mail-Adresse"
+                  PlaceholderColor="#dcdede"
+                  FontSize="Small"
+                  />
+            </Border>
+            <Label x:Name="ErrorLabel"
+                   TextColor="red"
+                   TranslationY="21"/>
+            <Border MinimumHeightRequest="300"
+                    MaximumWidthRequest="400"
+                    Stroke="#a2d4f4"
+                    StrokeThickness="2"
+                    TranslationY="30"
+                    TranslationX="-90">
+                <Entry TextColor="#1b1b1b"
+                        Placeholder="deine Mitteilung"
+                        PlaceholderColor="#dcdede"
+                        FontSize="Small"
+                        HorizontalOptions="Start"    
+                        VerticalTextAlignment="Start"/>
+            </Border>
+            <Button Text="senden"
+                    TextColor="#1b1b1b"
+                    MaximumWidthRequest="80"
+                    BackgroundColor="#a2d4f4"
+                    TranslationY="40"
+                    TranslationX="70"
+                    Clicked="Email_Uberprufung"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
